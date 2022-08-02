@@ -1,3 +1,6 @@
 .idea/*
 .gitignore
-poo/$('pwd')/__pychache__
+poo/encapsulamiento/__pycache__
+poo/herencia/__pycache__
+poo/herencia/ejercicio/__pycache__
+poo/herencia/herencia_multiple/__pycache__
