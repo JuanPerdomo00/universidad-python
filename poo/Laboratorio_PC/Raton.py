@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
 
 from Dispositivo_Entrada import Dispositivo_Entrada
 

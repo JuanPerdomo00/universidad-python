@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+# -*- coding: utf-8 -*-
 
 class Dispositivo_Entrada:
     def __init__(self, tipo_entrada, marca):
