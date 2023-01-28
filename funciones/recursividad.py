@@ -16,4 +16,4 @@ def factorial(num: int) -> int:
 
 numero: int = int(input("Ingrese el numero a hayar el factorial: "))
 
-print("El factorial de %d es: " % factorial(numero))
+print("El factorial de %d es: %d" % (numero, factorial(numero)))
