@@ -7,13 +7,13 @@
 # 5! = 120
 
 
-def factorial(num):
+def factorial(num: int) -> int:
     if num == 1:
         return 1
 
     return num * factorial(num - 1)
 
 
-numero = int(input("Ingrese el numero a hayar el factorial: "))
+numero: int = int(input("Ingrese el numero a hayar el factorial: "))
 
-print(f"El factorial de {numero} es: {factorial(numero)}")
+print("El factorial de %d es: " % factorial(numero))
