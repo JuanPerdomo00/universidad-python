@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-from poo.polimorfismo.polimorfismo import Empleado
-from poo.polimorfismo.Gerente import Gerente
 
+
+from Gerente import Gerente
+from Polimorfismo import Empleado
 
 def imprimir_detalle(objeto):
     # print(objeto)
