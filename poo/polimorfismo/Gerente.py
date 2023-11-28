@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from poo.polimorfismo.polimorfismo import Empleado
+from Polimorfismo import Empleado
 
 
 class Gerente(Empleado):
