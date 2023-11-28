@@ -1,12 +1,1 @@
-.idea/*
-.gitignore
-poo/encapsulamiento/__pycache__
-poo/herencia/__pycache__
-poo/herencia/ejercicio/__pycache__
-poo/herencia/herencia_multiple/__pycache__
-poo/Laboratorio_PC/__pycache__
-poo/constante/__pycache__
-poo/diseño_de_clase/__pycache__
-poo/polimorfismo/__pycache__
-excepciones/__pycache__
-manejo_archivos_python/archivos_con_whith/__pycache__
+venv/*
