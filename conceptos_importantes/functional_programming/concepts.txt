@@ -1,0 +1,20 @@
+Las funciones de primera clase, son funciones que pueden tratarse como cualquier otro valor.
+Pueden pasarse a funciones como arguments, devolverlas como funciones o almacenarla en alguna
+estructura de datos.
+
+ejemplo uno en example_one.py
+
+
+Durante la programacion funcional no exite el concepto de loops, for y while, en su lugar se usa la
+recursividad. `Proceso en que una funcion se llama a si misma`.
+
+Tener en cuenta el case base, este le dice a la funcion cuando terminar el proceso.
+
+Para esto el ejemplo de las torres de Hanoi. Un puzzle donde tenemos 3 caminos y n discos,
+el objetivo es mover todo los discos o toda la pila a otro camino respetando las reglas.
+
+1) Solo se puede mover un disco a la vez.
+2) Cada movimiento consiste en tomar la parte superior disco de unas de las pilas y colocandolo en sima de otra pila.
+3) Ningun disco se debe colocar en sima de un disco mas pequeno.
+
+ejemplo dos en example_two.py
