@@ -9,5 +9,4 @@ elif num == 2:
 elif num == 3:
     print(f"{num} - Numero Tres")
 else:
-    print(f'Numero no disponible a texto')
-
+    print(f"Numero no disponible a texto")

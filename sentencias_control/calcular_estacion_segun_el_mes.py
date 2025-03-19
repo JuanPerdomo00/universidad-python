@@ -15,5 +15,5 @@ else:
     estacion = "Mes incorrecto, descubriste un mes xd"
     print(f"Mes no existe, {estacion}")
     exit()
-    
+
 print(f"Para el mes {mes} la estacion es {estacion}")
