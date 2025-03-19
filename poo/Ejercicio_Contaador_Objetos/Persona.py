@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 class Persona:
     contador_persona = 0
 

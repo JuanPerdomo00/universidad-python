@@ -4,6 +4,7 @@
 from Gerente import Gerente
 from Polimorfismo import Empleado
 
+
 def imprimir_detalle(objeto):
     # print(objeto)
     print(type(objeto))

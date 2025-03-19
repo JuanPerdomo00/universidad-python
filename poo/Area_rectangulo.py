@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 class Rectangulo:
     def __init__(self, base: int, altura: int):
         self.base = base
@@ -19,5 +20,5 @@ def main():
     rect.area_rectangulo()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

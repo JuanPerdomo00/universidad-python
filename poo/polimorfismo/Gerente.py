@@ -9,5 +9,3 @@ class Gerente(Empleado):
 
     def __str__(self):
         return f"Generate: {self.departamento} {super().__str__()}"
-
-

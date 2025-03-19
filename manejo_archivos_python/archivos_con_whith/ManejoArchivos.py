@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 class ManejoArchivos:
     def __init__(self, nombre):
         self.nombre = nombre

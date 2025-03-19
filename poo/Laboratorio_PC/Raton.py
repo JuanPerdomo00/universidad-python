@@ -21,7 +21,7 @@ class Raton(Dispositivo_Entrada):
 
 
 # Prueba de la clase actual
-if __name__ == '__main__':
+if __name__ == "__main__":
     raton1 = Raton("USB", "Dell")
     print(raton1)
     raton2 = Raton("cable", "acer")

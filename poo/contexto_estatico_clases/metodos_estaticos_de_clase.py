@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 class Mi_Calse:
     var_clase = "Valor de variable de clase"
 

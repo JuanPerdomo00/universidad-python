@@ -18,4 +18,3 @@ except Exception as e:
 finally:
     archivo.close()
     print("Archivo cerrado")
-

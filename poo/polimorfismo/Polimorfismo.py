@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 class Empleado:
     def __init__(self, nombre, sueldo):
         self.nombre = nombre

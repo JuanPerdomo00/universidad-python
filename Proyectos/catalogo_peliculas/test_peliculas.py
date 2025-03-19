@@ -19,4 +19,3 @@ catalogo.listar_peliculas()
 # eliminar
 catalogo = CatalogoPeliculas("peliculas.txt")
 catalogo.eliminar_peliculas()
-

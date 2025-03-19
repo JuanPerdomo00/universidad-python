@@ -10,4 +10,3 @@ for letras in letra:
         break
 else:
     print("Fin de el ciclo")
-

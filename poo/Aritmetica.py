@@ -7,6 +7,7 @@ class Color:
     """
     Esta clase trae los colores desde colorama usando su propiedad Fore
     """
+
     off = Fore.RESET
     red = Fore.RED
     green = Fore.GREEN
@@ -19,6 +20,7 @@ class Clientes:
     Esta clase se encarga de crear un objeto
     sus metodos son saludar, depedir y dar error
     """
+
     def __init__(self, nick: str):
         self.nick = nick or "anonymous"
 
@@ -37,6 +39,7 @@ class Aritmetica:
     La clase aritmetica se encarga de crear los objetos
     y sus metodos son los que ayudaran hacer las operaciones
     """
+
     def __init__(self, n1: int, n2: int):
         self.n1 = n1
         self.n2 = n2
@@ -51,11 +54,15 @@ class Aritmetica:
 
     def multiplicar(self):
         resultado = self.n1 + self.n2
-        print(f"El resultado de la multiplicacion de {self.n1} y {self.n2} es: {resultado}")
+        print(
+            f"El resultado de la multiplicacion de {self.n1} y {self.n2} es: {resultado}"
+        )
 
     def divicion(self):
         resultado = self.n1 / self.n2
-        print(f"El resultado de la divicion de {self.n1} y {self.n2} es: {resultado:.2f}")
+        print(
+            f"El resultado de la divicion de {self.n1} y {self.n2} es: {resultado:.2f}"
+        )
 
 
 def banner():
@@ -131,5 +138,5 @@ def main():
         cliente.despedir_cliente()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

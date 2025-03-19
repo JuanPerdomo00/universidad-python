@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def main():
     n = int(input("Ingrese un numero: "))
     if n % 2 == 0:

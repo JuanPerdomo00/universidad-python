@@ -6,7 +6,7 @@ conexion = psycopg2.connect(
     password="123chopin",
     host="127.0.0.1",
     port="5432",
-    database="test_db"
+    database="test_db",
 )
 
 

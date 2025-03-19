@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 class Persona:
     def __init__(self, nombre, edad):
         self._nombre = nombre

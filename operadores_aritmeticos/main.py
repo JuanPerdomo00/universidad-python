@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def suma(x, y):
     return x + y
 
@@ -21,7 +22,7 @@ def divicion_entera(x, y):
 
 
 def exponenciacion(x, y):
-    return x ** y
+    return x**y
 
 
 def modulo(x, y):
@@ -48,13 +49,17 @@ def main():
     elif opcion == 5:
         print(f"La divicion entere entre {a} y {b} es: {divicion_entera(a, b)}")
     elif opcion == 6:
-        print(f"La potencia de la base {a} y el exponente {b} es: {exponenciacion(a, b)}")
+        print(
+            f"La potencia de la base {a} y el exponente {b} es: {exponenciacion(a, b)}"
+        )
     elif opcion == 7:
         print(f"El modulo de {a} entre {b} es: {modulo(a, b)}")
 
     else:
         print("Error opcion no encontrada")
-        nombre = input("Porfavor deje su nombre para una futura operacion: ").capitalize()
+        nombre = input(
+            "Porfavor deje su nombre para una futura operacion: "
+        ).capitalize()
         print(f"Gracias por usar el programa {nombre}")
         main()
 

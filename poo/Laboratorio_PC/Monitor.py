@@ -30,7 +30,7 @@ class Monitor:
 
 
 # Prueba de la clase actual
-if __name__ == '__main__':
+if __name__ == "__main__":
     monitor1 = Monitor("hp", "100 pulgadas")
     print(monitor1)
     monitor2 = Monitor("dell", "120 pulgadas")

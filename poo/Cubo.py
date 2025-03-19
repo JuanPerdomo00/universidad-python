@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 class Cubo:
     def __init__(self, anchoX, profundoZ, altoY):
         self.anchoX = anchoX
@@ -23,5 +24,5 @@ def main():
     cubo.calcular_volumen()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

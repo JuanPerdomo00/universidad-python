@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
+
 class Dispositivo_Entrada:
     def __init__(self, tipo_entrada, marca):
         self._tipo_entrada = tipo_entrada
@@ -27,7 +28,7 @@ class Dispositivo_Entrada:
 
 
 # Prueba de la clase actual
-if __name__ == '__main__':
+if __name__ == "__main__":
     dispositivo1 = Dispositivo_Entrada("USB", "ASUR")
     print(dispositivo1)
     print(dispositivo1.tipo_entrada)

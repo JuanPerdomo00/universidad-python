@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def iterar_nombres(*nombre: str):
     for nombres in nombre:
         print(nombres)

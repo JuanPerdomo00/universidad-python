@@ -3,6 +3,7 @@
 
 from Dispositivo_Entrada import Dispositivo_Entrada
 
+
 class Teclado(Dispositivo_Entrada):
     contador_teclados = 0
 
@@ -16,7 +17,7 @@ class Teclado(Dispositivo_Entrada):
 
 
 # Prueba de la clase actual
-if __name__ == '__main__':
+if __name__ == "__main__":
     teclado1 = Teclado("USB", "DELL")
     teclado2 = Teclado("Cameron", "COMP")
     print(teclado1, "\n", teclado2)

@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def main():
     edad = int(input("Ingrese su edad: "))
     if edad <= 0:

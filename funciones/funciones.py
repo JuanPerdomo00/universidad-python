@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def mi_funcion():
     print("Saludos desde esta funcion")
 
@@ -8,7 +9,8 @@ def mi_funcion():
 
 #  Funcion con parametros
 # ! Parametros son las variables que recivira nuestra funcion
-# ! Argumento donde vamos enviar los valores de las variables 
+# ! Argumento donde vamos enviar los valores de las variables
+
 
 def saludar(nombre: str, apellido: str) -> str:  # ? Parametros
     return f"Hola como estas 'Dr 👨‍🔬 {nombre.capitalize()} {apellido.capitalize()}'"

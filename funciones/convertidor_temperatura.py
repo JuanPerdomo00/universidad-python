@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def celsius_fahrenheit(c):
     """
     formula = f = (1.8 * c) + 32
@@ -24,16 +25,18 @@ def main():
     print("\t\t\tConvertidor de Temperature")
     print("*" * 50)
 
-    print("""
+    print(
+        """
     [*] 1 -> Convertir de celsius a fahrenheit
     [*] 2 -> Convertir de fahrenheit a celsius
     [*] 3 -> Salir
-    """, end='\n')
+    """,
+        end="\n",
+    )
 
     opcion = int(input("Ingresa una opcion: "))
 
     while opcion != 3:
-
         if opcion == 1:
             celsius = int(input("Ingrese los grados celsius: "))
             print(f"Los grados Fahrenheit son: {celsius_fahrenheit(celsius)}")

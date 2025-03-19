@@ -11,19 +11,19 @@ print("Tienda de computadoras".center(50, "-"))
 monitor1 = Monitor("hp", "100 pulgadas")
 teclado1 = Teclado("hp", "usb")
 raton1 = Raton("hp", "usb")
-computadora1 = Computadora('carpy', monitor1, teclado1, raton1)
+computadora1 = Computadora("carpy", monitor1, teclado1, raton1)
 print(computadora1)
 
 monitor2 = Monitor("dell", "120 pulgadas")
 teclado2 = Teclado("dell", "ps2")
 raton2 = Raton("dell", "ps2")
-computadora2 = Computadora('molly', monitor2, teclado2, raton2)
+computadora2 = Computadora("molly", monitor2, teclado2, raton2)
 print(computadora2)
 
 monitor3 = Monitor("acer", "150 pulgadas")
 teclado3 = Teclado("gamer", "usb")
 raton3 = Raton("acer", "cable")
-computadora3 = Computadora('acer', monitor3, teclado3, raton3)
+computadora3 = Computadora("acer", monitor3, teclado3, raton3)
 print(computadora3)
 
 computadoras1 = [computadora1, computadora2]

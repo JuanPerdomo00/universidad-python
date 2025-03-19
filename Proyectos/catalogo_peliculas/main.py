@@ -67,13 +67,17 @@ def main():
                 print(f"{c.RED}[!] Opcion incorrecta {c.OFF}")
     except KeyboardInterrupt as e:
         print(f"{c.MAGENTA}Saliendo...\n{c.OFF}")
-        os.system("echo gracias por usar el programa. by Jakepy && cowsay -f tux 'Tu seras un grande' ")
+        os.system(
+            "echo gracias por usar el programa. by Jakepy && cowsay -f tux 'Tu seras un grande' "
+        )
         os.system("exit 1")
     except ValueError as e:
         clear()
         menu()
-        print(f"{c.RED} Error al ingresar la opcion: {e} Posiblemente la causa fue un espacio{c.OFF} ")
+        print(
+            f"{c.RED} Error al ingresar la opcion: {e} Posiblemente la causa fue un espacio{c.OFF} "
+        )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

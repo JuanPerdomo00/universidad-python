@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 class Mi_Calse:
     var_clase = "Valor de variable de clase"
 
@@ -23,4 +24,4 @@ if __name__ == "__main__":
     print(var2.variable_instancia)
 
     print(Mi_Calse.var_clase_2)
-    print(var2.var_clase_2) # <- el ide no la reconoce divido a que se creo en vuelo
+    print(var2.var_clase_2)  # <- el ide no la reconoce divido a que se creo en vuelo

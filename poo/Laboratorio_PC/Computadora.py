@@ -40,15 +40,15 @@ class Computadora:
 
 
 # Prueba de la clase actual
-if __name__ == '__main__':
+if __name__ == "__main__":
     monitor1 = Monitor("hp", "100 pulgadas")
     teclado1 = Teclado("hp", "usb")
     raton1 = Raton("hp", "usb")
-    computadora1 = Computadora('carpy', monitor1, teclado1, raton1)
+    computadora1 = Computadora("carpy", monitor1, teclado1, raton1)
     print(computadora1)
 
     monitor2 = Monitor("dell", "120 pulgadas")
     teclado2 = Teclado("dell", "ps2")
     raton2 = Raton("dell", "ps2")
-    computadora2 = Computadora('molly', monitor2, teclado2, raton2)
+    computadora2 = Computadora("molly", monitor2, teclado2, raton2)
     print(computadora2)

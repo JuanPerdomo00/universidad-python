@@ -7,5 +7,10 @@ def listar_terminos(**kwargs):
         print(f"Key: {i}, Value: {z}")
 
 
-listar_terminos(astronomia="Jose Maza", fisica='Juan Perdomo', quimica='Marie curie', filosofia="friedrich", phicologia="Sigmund Freud")
-
+listar_terminos(
+    astronomia="Jose Maza",
+    fisica="Juan Perdomo",
+    quimica="Marie curie",
+    filosofia="friedrich",
+    phicologia="Sigmund Freud",
+)

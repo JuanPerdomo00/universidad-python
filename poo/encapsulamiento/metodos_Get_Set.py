@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 class Persona:
     """
     Metodos Get y Set
@@ -50,7 +51,7 @@ class Persona:
         print(f"Persona: {self._nombre} {self._apellido} {self._edad} fue eliminado")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     persona1 = Persona("jakepy", "perdomo", 20)
     persona1.nombre = "friedrich"
     print(persona1.nombre)

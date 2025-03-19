@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 class Veiculo:
     def __init__(self, color: str, ruedas: int):
         self._color = color
@@ -57,5 +58,3 @@ class Bicicleta(Veiculo):
 
     def __str__(self):
         return f"Bicicleta: {super().__str__()}, El tipo es: {self._tipo}"
-
-

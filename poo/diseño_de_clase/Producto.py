@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 class Producto:
     contador_productos = 0
 
@@ -33,7 +34,7 @@ class Producto:
         return f"ID Producto: {self._id_producto},  Nombre: {self._nombre}, Precio: {self._precio}"
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     preducto1 = Producto("libro", 10.00)
     preducto2 = Producto("ropa", 90.00)
     print(preducto1)

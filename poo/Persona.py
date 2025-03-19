@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 class Persona:
     """
     Puede tener atributos y metodos
@@ -21,7 +22,9 @@ class Persona:
         print(f"Kwargs: {self.terminos}")
 
 
-persona1 = Persona("Juan", "Perdomo", 19, 3132324, 1, 2, 3, 4, phicologia="Sigmund freud")
+persona1 = Persona(
+    "Juan", "Perdomo", 19, 3132324, 1, 2, 3, 4, phicologia="Sigmund freud"
+)
 
 persona1.mostrar_detalles()
 persona1.mostrar_args_kwargs()

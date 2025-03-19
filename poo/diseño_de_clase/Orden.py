@@ -20,14 +20,14 @@ class Orden:
         return total
 
     def __str__(self):
-        productos_str = ''
+        productos_str = ""
         for producto in self._productos:
             productos_str += producto.__str__() + ", \n"
 
         return f"Orden {self._id_orden}, \nProductos: {productos_str}"
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     producto1 = Producto("libro", 10.00)
     producto2 = Producto("ropa", 90.00)
 

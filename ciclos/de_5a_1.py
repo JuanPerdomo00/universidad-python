@@ -8,4 +8,3 @@ while contador >= 1:
 
 else:
     print("terminado")
-

@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # github.com/JuanPerdomo00
 
-class Pelicula:
 
+class Pelicula:
     def __init__(self, nombre):
         self._nombre = nombre
 
@@ -14,4 +14,3 @@ class Pelicula:
     @nombre.setter
     def nombre(self, nombre):
         self._nombre = nombre
-

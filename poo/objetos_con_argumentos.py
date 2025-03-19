@@ -23,5 +23,3 @@ persona2.edad = 90
 
 persona1.mostrar_detalles()
 persona2.mostrar_detalles()
-
-
