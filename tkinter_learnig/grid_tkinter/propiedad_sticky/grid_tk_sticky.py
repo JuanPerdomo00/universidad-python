@@ -29,4 +29,3 @@ btn2.grid(row=1, column=0, sticky="E")
 
 
 windows.mainloop()
-
