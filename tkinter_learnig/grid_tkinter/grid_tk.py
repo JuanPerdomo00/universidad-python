@@ -1,4 +1,4 @@
-#!/usr/bin/python3 
+#!/usr/bin/python3
 
 from tkinter import Tk, ttk
 
@@ -9,7 +9,8 @@ windows.title("Gird tkiner")
 windows.geometry("600x400")
 # windows.iconbitmap("../icono.ico")
 
-# Metodos de eventos 
+
+# Metodos de eventos
 def a_event():
     btn1.config(text="Boton 1 presionado")
 
@@ -18,7 +19,7 @@ def b_event():
     btn2.config(text="Boton 2 presionado")
 
 
-# definimos dos botones 
+# definimos dos botones
 btn1 = ttk.Button(windows, text="Boton 1", command=a_event)
 btn1.grid(row=0, column=0)
 
