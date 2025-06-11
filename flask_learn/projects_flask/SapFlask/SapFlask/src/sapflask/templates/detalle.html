@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detalle Persona {{persona.nombre}}</title>
+</head>
+<body>
+    <h1>Persona {{persona.nombre}} - ID: {{persona.id}}</h1>
+    <p>Nikc: {{persona.nick_name}}</p>
+    <p>Apellido: {{persona.apellido}}</p>
+    <p>Email: {{persona.email}}</p>
+
+    <a href="{{url_for('inicio')}}">Inicio</a>
+</body>
+</html>
