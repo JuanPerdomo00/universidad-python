@@ -1,6 +1,8 @@
-from flask import Flask, render_template
-from flask_sqlalchemy import SQLAlchemy
+from flask import Flask, render_template, request, redirect, url_for
 from flask_migrate import Migrate
+from sapflask.database import db
+from sapflask.models import Persona
+from sapflask.forms import PersonaForm
 
 app = Flask(__name__)
 
@@ -15,28 +17,15 @@ app.config["SQLALCHEMY_DATABASE_URI"] = FULL_URL_DB
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 # Inicializacion del objeto SQLALCHEMY
-db = SQLAlchemy(app)
+db.init_app(app)
 
 # Configurar flask_migrate
 migrate = Migrate()
 migrate.init_app(app, db)
 
 
-class Persona(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    nick_name = db.Column(db.String(250))
-    nombre = db.Column(db.String(250))
-    apellido = db.Column(db.String(250))
-    email = db.Column(db.String(250))
-
-    def __str__(self):
-        return (
-            f"Id: {self.id}, "
-            f"Nick Name: {self.nick_name}, "
-            f"Nombre: {self.nombre}, "
-            f"Apellido: {self.apellido}, "
-            f"Email: {self.email}, "
-        )
+# Configurar flask-wtf
+app.config["SECRET_KEY"] = "=g%7}gBQpK;Oc;3Qx~#=;yLe[L"
 
 
 @app.route("/")
@@ -44,7 +33,8 @@ class Persona(db.Model):
 @app.route("/index.html")
 def inicio():
     # Listado de personas
-    personas = Persona.query.all()
+    #personas = Persona.query.all()
+    personas = Persona.query.order_by("id")
     total_personas = Persona.query.count()
     app.logger.debug(f"Listado de personas: {personas}")
     app.logger.debug(f"Total personas: {total_personas}")
@@ -53,10 +43,49 @@ def inicio():
     )
 
 
-@app.route('/verp/<int:id>')
+@app.route("/verp/<int:id>")
 def ver_persona(id: int):
     # recuperamos la persona segun el ID
-    persona = Persona.query.get_or_404(id)
+    persona = Persona.query.get_or_404(id, "No se encontro la persona")
     app.logger.debug(f"Persona recuperada: {persona}")
     app.logger.debug(f"Type: {type(persona)}")
     return render_template("detalle.html", persona=persona)
+
+
+@app.route("/agregar", methods=["GET", "POST"])
+def agregar_persona():
+    persona = Persona()
+    personaForm = PersonaForm(obj=persona)
+
+    if request.method == "POST":
+        if personaForm.validate_on_submit():
+            personaForm.populate_obj(persona)
+            app.logger.debug(f"Persona a insertar: {persona}")
+            # insertamos nuevo registro
+            db.session.add(persona)
+            db.session.commit()
+            return redirect(url_for("inicio"))
+
+    return render_template("agregar.html", forma=personaForm)
+
+
+@app.route("/editarp/<int:id>", methods=["GET", "POST"])
+def editar_persona(id):
+    persona = Persona().query.get_or_404(id, "No se encontro la persona")
+    personaForm = PersonaForm(obj=persona)
+    if request.method == "POST":
+        if personaForm.validate_on_submit():
+            personaForm.populate_obj(persona)
+            app.logger.debug(persona)
+            db.session.commit()
+            return redirect(url_for("inicio"))
+    return render_template("editar.html", forma=personaForm)
+
+
+@app.route("/eliminarp/<int:id>")
+def eliminar_persona(id):
+    persona = Persona.query.get_or_404(id)
+    app.logger.debug(f"Persona a eliminar: {persona}")
+    db.session.delete(persona)
+    db.session.commit()
+    return redirect(url_for("inicio"))
