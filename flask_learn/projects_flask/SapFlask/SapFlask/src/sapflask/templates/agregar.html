@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Persona</title>
+</head>
+<body>
+    <h1>Agregar Persona</h1>
+    <form method="POST">
+        {{forma.csrf_token}}
+        <p>
+            {{forma.nick_name.label}} <br>
+            {{forma.nick_name(size=30)}}
+        </p>
+        <p>
+            {{forma.nombre.label}} <br>
+            {{forma.nombre(size=30)}}
+        </p>
+        <p>
+            {{forma.apellido.label}} <br>
+            {{forma.apellido(size=30)}}
+        </p>
+        <p>
+            {{forma.email.label}} <br>
+            {{forma.email(size=30)}}
+        </p>
+        <p>
+            {{forma.enviar()}}
+        </p>
+    </form>
+</body>
+</html>

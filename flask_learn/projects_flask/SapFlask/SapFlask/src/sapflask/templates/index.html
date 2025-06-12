@@ -13,6 +13,9 @@
         <p>Total de personas: {{total_personas}}</p>
     </div>
     <div>
+        <a href="{{url_for('agregar_persona')}}">Agregar persona</a>
+    </div>
+    <div>
         <table border="1">
             <thead>
                 <tr>
@@ -21,7 +24,8 @@
                     <th>Nombre</th>
                     <th>Apellido</th>
                     <th>Email</th>
-                    <th>Ver id</th>
+                    <th>Ver Persona</th>
+                    <th>Editar Persona</th>
                 </tr>
             </thead>
             <tbody>
@@ -33,6 +37,8 @@
                     <td>{{persona.apellido}}</td>
                     <td>{{persona.email}}</td>
                     <td><a href="verp/{{persona.id}}">Ver persona</a></td>
+                    <td><a href="editarp/{{persona.id}}">Editar persona</a></td>
+                    <td><a href="eliminarp/{{persona.id}}">Eliminar persona</a></td>
                 </tr>
                 {% endfor %}
             </tbody>
