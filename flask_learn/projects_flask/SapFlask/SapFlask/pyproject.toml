@@ -1,0 +1,30 @@
+[project]
+name = "sapflask"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "perdomojuan187@gmail.com", email = "perdomojuan187@gmail.com" }
+]
+dependencies = [
+    "flask-sqlalchemy>=3.1.1",
+    "flask>=3.1.1",
+    "flask-migrate>=4.1.0",
+    "psycopg2-binary>=2.9.10",
+    "flask-wtf>=1.2.2",
+]
+readme = "README.md"
+requires-python = ">= 3.13"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sapflask"]
