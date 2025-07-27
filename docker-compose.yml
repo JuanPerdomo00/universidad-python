@@ -1,0 +1,24 @@
+#version del composer
+version: "3.3"
+
+# servicios
+services:
+  dbpostgres: # nombre de contenedor
+    image: postgres:13 # imagen del software
+    environment: #env
+      - POSTGRES_DB=db
+      - POSTGRES_USER=jakepys
+      - POSTGRES_PASSWORD=123chopin
+
+    ports: # puerto deonde este escuchara
+      - 5432:5432
+    volumes: # volumen donde hara la persistencia de datos.
+      - ./data:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@example.com
+      - PGADMIN_DEFAULT_PASSWORD=123root
+    ports:
+      - 5050:80
